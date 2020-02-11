@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import Header from './Header.js';
+import Body from './Body.js';
+import Footer from './Footer.js';
 import './App.css';
+import './style.css';
 
-function App() {
+
+export default class App extends Component {
+
+
+
+render () {
+  const pizza = {
+    url:'choco-pizza.png',
+    name:'Chocolate Pizza',
+    description:'Delicious',
+    author:'Vanessa Stevenson'
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <div className='app'> 
+  <Header description={pizza.description}/>
+  <Body url={pizza.url} name={pizza.name}></Body>
+  <Footer author={pizza.author}></Footer>
+  </div>
+ 
   );
 }
-
-export default App;
+}
