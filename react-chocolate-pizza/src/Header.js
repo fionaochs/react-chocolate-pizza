@@ -2,10 +2,28 @@ import React, { Component } from 'react';
 
 export default class Header extends Component {
     render() {
-      return <div>
-          <img id='logo' alt='header img' src='logo.png' />
-          <h1>{this.props.description}</h1>
-          <h2>THE BEST FOOD BLOG ON THE WEB</h2>
-          </div>;
+      return <header>
+              <div id="branding">
+        <img id="logo" src='logo.png' />
+        <div id="branding-text">
+            <h3>{this.props.description}</h3>
+            <p id="best">THE BEST FOOD BLOG ON THE WEB.</p>
+        </div>
+    </div>
+    <nav>
+        <div class="nav-div" id="rss">
+            <img class="icon" src='rss-icon.png' />
+            <img class="icon" src='mail-icon.png' />
+        </div>
+        <div class="nav-div">
+            <img class="icon" alt='image' src='fb-icon.png' />
+            <img class="icon" alt='image logo' src='twit-icon.png' />
+            <img class="icon" alt='image insta' src='gp-icon.png' />
+            <img class="icon" alt='image fb' src='insta-icon.png' />
+            <img class="icon" alt='image twitter' src='flic-icon.png' />
+            <img class="icon" alt='image' src='pint-icon.png' />
+        </div>
+    </nav>
+          </header>;
     }
   }

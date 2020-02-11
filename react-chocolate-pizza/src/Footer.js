@@ -1,7 +1,17 @@
 import React, { Component } from "react";
 
 export default class Body extends Component {
+    state = {
+        shareRecipeCounts: 0
+    }
+
+    handleButtonClick = e =>
+    this.setState({
+      shareRecipeCounts: this.state.shareRecipeCounts + 1
+    });
+
     render() {
+        console.log(this.state.shareRecipeCounts);
       return  <div id='footer'>   
       <img id='headShot' alt='headshot' src='van-pic.png'></img>
     
@@ -13,7 +23,7 @@ export default class Body extends Component {
       </div>
           
           <div id="button">
-              <button id="recipeButton" type="submit">SHARE RECIPE</button>
+              <button id="recipeButton" type="submit" onClick={this.handleButtonClick}>SHARE RECIPE</button>
           </div>
     </div> 
     }

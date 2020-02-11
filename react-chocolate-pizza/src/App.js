@@ -7,20 +7,19 @@ import './style.css';
 
 
 export default class App extends Component {
-
-
-
 render () {
   const pizza = {
     url:'choco-pizza.png',
     name:'Chocolate Pizza',
     description:'Delicious',
-    author:'Vanessa Stevenson'
+    author:'Vanessa Stevenson',
+    date:'POSTED ON 15 DEC 2013/ DESSERTS'
   }
+    
   return (
   <div className='app'> 
   <Header description={pizza.description}/>
-  <Body url={pizza.url} name={pizza.name}></Body>
+  <Body url={pizza.url} name={pizza.name} date={pizza.date}></Body>
   <Footer author={pizza.author}></Footer>
   </div>
  

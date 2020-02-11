@@ -90,9 +90,11 @@ section{
 }
 #ingredients{
     display: flex;
+    background-image: url('/list-bg.png');
     background-repeat: no-repeat;
     justify-content: space-around;
-  
+    height: 200px;
+    max-width: 100%;
 }
 
 input{
@@ -107,10 +109,10 @@ input{
     background: repeating-linear-gradient(45deg, gray, white .5%, gray .1%);
 }
 #strikeThis{
-      justify-content: left;
+    justify-content: left;
 }
 ul{
-    max-width: 50%;
+    max-width: 80%;
     color: rgb(151, 104, 15);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
      
