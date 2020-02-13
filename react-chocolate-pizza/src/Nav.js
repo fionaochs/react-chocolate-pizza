@@ -1,16 +1,9 @@
 import React, { Component } from 'react';
 
-export default class Header extends Component {
+export default class Nav extends Component {
     render() {
       return <header>
-              <div id="branding">
-        <img id="logo" src='logo.png' />
-        <div id="branding-text">
-            <h3>{this.props.description}</h3>
-            <p id="best">THE BEST FOOD BLOG ON THE WEB.</p>
-        </div>
-    </div>
-    {/* <nav>
+    <nav>
         <div class="nav-div" id="rss">
             <img class="icon" src='rss-icon.png' />
             <img class="icon" src='mail-icon.png' />
@@ -23,7 +16,7 @@ export default class Header extends Component {
             <img class="icon" alt='image twitter' src='flic-icon.png' />
             <img class="icon" alt='image' src='pint-icon.png' />
         </div>
-    </nav> */}
+    </nav>
           </header>;
     }
   }
